@@ -1,5 +1,5 @@
 import {React, Component} from 'react';
-import "E:/camprec2/node_modules//bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.css";
 import"../css/home.css";
 import web5 from "../images/admin_login.png";
@@ -45,7 +45,7 @@ class Adminlogin extends Component {
                 "password" : this.state.password  
             };
         const header = {'Accept':'*/*','Content-Type': 'application/json', 'Accept-Encoding' : 'gzip, deflate, br', 'Connection' : 'keep-alive'};
-        axios.post('https://camprec.herokuapp.com/api/company/login',body,{header})
+        axios.post('https://camprec.herokuapp.com/api/college/login',body,{header})
             .then(function(response) {
                 const data = response.data;
                 // check for error response
